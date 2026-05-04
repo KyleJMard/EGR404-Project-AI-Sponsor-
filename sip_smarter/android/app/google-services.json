@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "345069558975",
+    "project_id": "sipsmarter-7bafb",
+    "storage_bucket": "sipsmarter-7bafb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345069558975:android:7e2f758c2622b7393d7a0a",
+        "android_client_info": {
+          "package_name": "Sip.Smarter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuqqm4CHMztpJtVQDRrsFkSyUn2Fjdizs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345069558975:android:2590fc712f90eeb53d7a0a",
+        "android_client_info": {
+          "package_name": "com.uricsc305.SipSmartAI"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuqqm4CHMztpJtVQDRrsFkSyUn2Fjdizs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
