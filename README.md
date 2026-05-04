@@ -1,97 +1,47 @@
+SipSmarter is a data-driven application that:
+* Tracks alcohol consumption
+* Aggregates user behavior
+* Uses AI and RAG to generate personalized insights
+
 Getting Started
 
-These instructions will help you set up and run the SipSmarter Flutter app locally.
+These instructions explain how to run the SipSmarter Flutter app locally.
+The app is already configured to use an existing Firebase backend, so no additional Firebase setup is required.
 
 Prerequisites
 
 Make sure you have the following installed:
 
-Flutter SDK (latest stable): https://docs.flutter.dev/get-started/install
-Dart (comes with Flutter)
-Android Studio or VS Code (with Flutter plugin)
+* Flutter SDK (latest stable): https://docs.flutter.dev/get-started/install
+* Dart (included with Flutter)
+* Android Studio or VS Code (with Flutter plugin)
 
-Firebase CLI:
-
-npm install -g firebase-tools
-A Firebase project
 Clone the Repository
 git clone https://github.com/your-username/sipsmarter.git
 cd sipsmarter
+
 Install Dependencies
 flutter pub get
-Firebase Setup
-1. Create a Firebase Project
+Firebase Configuration
 
-Go to:
-https://console.firebase.google.com/
+No setup is required.
 
-Create a new project
-Enable:
-Authentication (Email/Password or your chosen method)
-Firestore Database
-2. Add Firebase to Flutter
+This project already includes Firebase configuration files (firebase_options.dart), and connects to a preconfigured backend. The app will automatically use the existing Firestore database and authentication system.
 
-Use FlutterFire CLI:
+API Configuration
 
-dart pub global activate flutterfire_cli
-flutterfire configure
+The app is preconfigured to call a deployed backend function.
 
-This will generate:
-
-lib/firebase_options.dart
-3. Enable Firestore
-
-In Firebase Console:
-
-Go to Firestore Database
-Create database (start in test mode for development)
-Environment / API Setup
-
-Your app relies on a backend function.
-
-Update API endpoint
-
-Locate your API call in the exported FlutterFlow code (typically in api_calls.dart or similar) and update:
+If needed, verify the API endpoint in the exported code (typically in api_calls.dart or similar):
 
 const String baseUrl = "https://your-cloud-function-url";
 Run the App
-For emulator or device:
+Run on emulator or physical device:
 flutter run
-For web:
+Run on web:
 flutter run -d chrome
-Test the App
-Create an account or log in
-Add drink entries
-Trigger the AI insight feature
-Verify:
-Data is stored in Firestore
-API returns AI-generated summary
-Troubleshooting
-Common issues:
-Firebase not initialized
-Ensure firebase_options.dart is generated
 
-Check main.dart includes:
-
-await Firebase.initializeApp(
-  options: DefaultFirebaseOptions.currentPlatform,
-);
-API not working
-Verify backend URL is correct
-Ensure cloud function is deployed and accessible
-No data showing
-Check Firestore rules
-Confirm user UID matches stored data
-Notes
-Ensure your Firebase project and backend are properly configured before running
-For production, update Firestore rules and secure API endpoints
-Project Overview
-
-SipSmarter is a data-driven application that:
-
-Tracks alcohol consumption
-Aggregates user behavior
-Uses AI and RAG to generate personalized insights
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # SipSmarter AI — Python Cloud Function (RAG-Based Insight Engine)
 
