@@ -7,7 +7,7 @@ Getting Started
 
 These instructions explain how to run the SipSmarter Flutter app locally.
 The app is already configured to use an existing Firebase backend, so no additional Firebase setup is required.
-
+You can also try this link to test the app, rather than going through the process of setting it up for local run: https://app.flutterflow.io/run/yzQF4K9cONclFe0fxhaZ
 Prerequisites
 
 Make sure you have the following installed:
@@ -17,14 +17,14 @@ Make sure you have the following installed:
 * Android Studio or VS Code (with Flutter plugin)
 
 Clone the Repository
-git clone https://github.com/your-username/sipsmarter.git
+git clone https://github.com/KyleJMard/EGR404-Project-AI-Sponsor-
 cd sipsmarter
 
-Install Dependencies
-flutter pub get
-Firebase Configuration
+Install Dependencies: 
+* flutter pub get
 
-No setup is required.
+Firebase Configuration:
+* No setup is required.
 
 This project already includes Firebase configuration files (firebase_options.dart), and connects to a preconfigured backend. The app will automatically use the existing Firestore database and authentication system.
 
